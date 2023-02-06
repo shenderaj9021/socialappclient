@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      `https://spaceship-859s.onrender.com/auth/register`,
+      `${process.env.LINK}/auth/register`,
       {
         method: "POST",
         body: formData,
@@ -80,7 +80,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     console.log(process.env.BACKEND_LINK)
-    const loggedInResponse = await fetch(`https://spaceship-859s.onrender.com/auth/login`, {
+    const loggedInResponse = await fetch(`https://speceship-server.onrender.com/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),

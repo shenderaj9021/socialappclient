@@ -8,7 +8,7 @@ const UserImage = ({ image, size = "60px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`https://spaceship-859s.onrender.com/assets/${image}`}
+        src={`https://speceship-server.onrender.com/assets/${image}`}
       />
     </Box>
   );
